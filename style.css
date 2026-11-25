@@ -1,0 +1,124 @@
+
+:root{
+    --background:#181818;
+    --surface:#262626;
+    --accent:#ffdf00;
+    --text:#ffffff;
+}
+[data-bs-theme="light"]{
+    --background:#f1f1f1;
+    --surface:#ffffff;
+    --text:#181818;
+}
+body{
+    background:var(--background);
+    color:var(--text);
+    font-family:Arial,sans-serif;
+}
+html{
+    scroll-behavior:smooth;
+}
+section,header,footer{
+    scroll-margin-top:75px;
+}
+.navbar,footer{
+    background:var(--surface);
+}
+.navbar-brand{
+    font-size:24px;
+    letter-spacing:2px;
+}
+.navbar-brand span,.price,.benefit i{
+    color:var(--accent);
+}
+.nav-link{
+    color:var(--text);
+}
+.nav-link:hover{
+    color:var(--accent);
+}
+.btn-warning{
+    background:#ffdf00;
+    border-color:#ffdf00;
+    color:#181818;
+    font-weight:600;
+}
+.btn-warning:hover{
+    background:#e6c900;
+    border-color:#e6c900;
+}
+.btn-outline-warning{
+    color:var(--accent);
+    border-color:var(--accent);
+}
+.carousel-item img{
+    height:540px;
+    object-fit:cover;
+    filter:brightness(45%);
+}
+.carousel-caption{
+    bottom:25%;
+    color:white;
+}
+.carousel-caption h1{
+    font-size:clamp(32px,5vw,64px);
+    font-weight:900;
+}
+.carousel-caption p{
+    font-size:20px;
+}
+.benefit,.card{
+    background:var(--surface);
+    color:var(--text);
+}
+.benefit i{
+    font-size:32px;
+}
+.benefit p{
+    margin-bottom:0;
+}
+.section-title{
+    font-weight:800;
+    border-left:5px solid #ffdf00;
+    padding-left:15px;
+    letter-spacing:1px;
+}
+.card{
+    overflow:hidden;
+    transition:transform 0.2s;
+}
+.card:hover{
+    transform:translateY(-5px);
+}
+.card-img-top{
+    height:230px;
+    object-fit:cover;
+}
+.progress{
+    height:22px;
+    margin-top:12px;
+}
+.accordion-button:not(.collapsed){
+    background:#ffdf00;
+    color:#181818;
+}
+footer p{
+    margin-bottom:8px;
+}
+[data-bs-theme="light"]{
+    --accent:#806b00;
+}
+@media(max-width:576px){
+    .carousel-item img{
+        height:420px;
+    }
+    .carousel-caption{
+        bottom:15%;
+    }
+    .carousel-caption p{
+        font-size:16px;
+    }
+    .card-img-top{
+        height:200px;
+    }
+}
